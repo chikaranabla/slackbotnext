@@ -36,6 +36,7 @@ resource:
 plugins:
   endpoints:
     - group/slack-bot-next.yaml
+    - endpoints/verify_only.yaml      # ★★★ この行を新しく追加 ★★★
 meta:
   version: 0.0.1
   arch:

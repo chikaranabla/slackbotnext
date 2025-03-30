@@ -1,0 +1,13 @@
+# endpoints/verify_only.yaml
+
+# このエンドポイントへのパスを指定します。
+# 元の "/" と区別するために "/verify" とします。
+path: "/verify"
+
+# SlackからのリクエストはPOSTなので、メソッドを指定します。
+method: "POST"
+
+# どのPythonコードを実行するかを指定します。
+extra:
+  python:
+    source: "endpoints/verify_only.py" # ステップ1で作成したファイル
